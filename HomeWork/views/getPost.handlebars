@@ -1,0 +1,23 @@
+<h1>Post Request Received</h1>
+
+{{#if dataListURL}}
+	<ul>	
+		{{#each dataListURL}}
+			<li>{{this.name}}: {{this.value}}
+		{{/each}}
+	</ul>
+{{else}}
+	<p>No Query Parameters</p>
+{{/if}}
+
+
+{{#if dataList}}
+	<ul>	
+		{{#each dataList}}
+			<li>{{this.name}}: {{this.value}}
+		{{/each}}
+	</ul>
+{{else}}
+	<p>No Body Parameters</p>
+{{/if}}
+
