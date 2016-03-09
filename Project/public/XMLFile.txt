@@ -1,0 +1,90 @@
+<query xmlns:yahoo="http://www.yahooapis.com/v1/base.rng" yahoo:count="1" yahoo:created="2016-03-05T05:13:07Z" yahoo:lang="en-US">
+  <results>
+    <quote symbol="AMZN">
+      <Ask>575.60</Ask>
+      <AverageDailyVolume>5600810</AverageDailyVolume>
+      <Bid>574.90</Bid>
+      <AskRealtime/>
+      <BidRealtime/>
+      <BookValue>28.42</BookValue>
+      <Change_PercentChange>-2.35 - -0.41%</Change_PercentChange>
+      <Change>-2.35</Change>
+      <Commission/>
+      <Currency>USD</Currency>
+      <ChangeRealtime/>
+      <AfterHoursChangeRealtime/>
+      <DividendShare/>
+      <LastTradeDate>3/4/2016</LastTradeDate>
+      <TradeDate/>
+      <EarningsShare>1.25</EarningsShare>
+      <ErrorIndicationreturnedforsymbolchangedinvalid/>
+      <EPSEstimateCurrentYear>4.60</EPSEstimateCurrentYear>
+      <EPSEstimateNextYear>8.57</EPSEstimateNextYear>
+      <EPSEstimateNextQuarter>0.96</EPSEstimateNextQuarter>
+      <DaysLow>571.07</DaysLow>
+      <DaysHigh>581.40</DaysHigh>
+      <YearLow>365.65</YearLow>
+      <YearHigh>696.44</YearHigh>
+      <HoldingsGainPercent/>
+      <AnnualizedGain/>
+      <HoldingsGain/>
+      <HoldingsGainPercentRealtime/>
+      <HoldingsGainRealtime/>
+      <MoreInfo/>
+      <OrderBookRealtime/>
+      <MarketCapitalization>270.80B</MarketCapitalization>
+      <MarketCapRealtime/>
+      <EBITDA>7.88B</EBITDA>
+      <ChangeFromYearLow>209.49</ChangeFromYearLow>
+      <PercentChangeFromYearLow>+57.29%</PercentChangeFromYearLow>
+      <LastTradeRealtimeWithTime/>
+      <ChangePercentRealtime/>
+      <ChangeFromYearHigh>-121.30</ChangeFromYearHigh>
+      <PercebtChangeFromYearHigh>-17.42%</PercebtChangeFromYearHigh>
+      <LastTradeWithTime>4:00pm - <b>575.14</b></LastTradeWithTime>
+      <LastTradePriceOnly>575.14</LastTradePriceOnly>
+      <HighLimit/>
+      <LowLimit/>
+      <DaysRange>571.07 - 581.40</DaysRange>
+      <DaysRangeRealtime/>
+      <FiftydayMovingAverage>553.40</FiftydayMovingAverage>
+      <TwoHundreddayMovingAverage>584.70</TwoHundreddayMovingAverage>
+      <ChangeFromTwoHundreddayMovingAverage>-9.56</ChangeFromTwoHundreddayMovingAverage>
+      <PercentChangeFromTwoHundreddayMovingAverage>-1.63%</PercentChangeFromTwoHundreddayMovingAverage>
+      <ChangeFromFiftydayMovingAverage>21.74</ChangeFromFiftydayMovingAverage>
+      <PercentChangeFromFiftydayMovingAverage>+3.93%</PercentChangeFromFiftydayMovingAverage>
+      <Name>Amazon.com, Inc.</Name>
+      <Notes/>
+      <Open>581.05</Open>
+      <PreviousClose>577.49</PreviousClose>
+      <PricePaid/>
+      <ChangeinPercent>-0.41%</ChangeinPercent>
+      <PriceSales>2.54</PriceSales>
+      <PriceBook>20.32</PriceBook>
+      <ExDividendDate/>
+      <PERatio>460.11</PERatio>
+      <DividendPayDate/>
+      <PERatioRealtime/>
+      <PEGRatio>3.07</PEGRatio>
+      <PriceEPSEstimateCurrentYear>125.03</PriceEPSEstimateCurrentYear>
+      <PriceEPSEstimateNextYear>67.11</PriceEPSEstimateNextYear>
+      <Symbol>AMZN</Symbol>
+      <SharesOwned/>
+      <ShortRatio>0.91</ShortRatio>
+      <LastTradeTime>4:00pm</LastTradeTime>
+      <TickerTrend/>
+      <OneyrTargetPrice>736.27</OneyrTargetPrice>
+      <Volume>3416545</Volume>
+      <HoldingsValue/>
+      <HoldingsValueRealtime/>
+      <YearRange>365.65 - 696.44</YearRange>
+      <DaysValueChange/>
+      <DaysValueChangeRealtime/>
+      <StockExchange>NMS</StockExchange>
+      <DividendYield/>
+      <PercentChange>-0.41%</PercentChange>
+      </quote>
+      </results>
+      </query>
+      <!--  total: 19  -->
+      <!--  main-3b85316c-e117-11e5-9604-80c16e70492a  -->

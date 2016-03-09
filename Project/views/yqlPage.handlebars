@@ -1,0 +1,33 @@
+<div class="navigate">
+  <table>
+    <tr>
+      <td><a href="?page=mainPage">Home</a></td>
+      <td><a href="?page=csvPage">Yahoo Finance CSV API</a></td>
+      <td><a href="?page=yqlPage">Yahoo Finance YQL API</a></td>
+    </tr>
+  </table>
+</div>
+<div class="leftSide">
+  <h1 class="title">Yahoo Finance YQL API</h1>
+  <h2>Information</h2>
+  <p class="author">Yahoo SQL</p>  
+  <h2>Filter by Query</h2>
+  <p>The base URL for YQL is:</p>
+  <p class="centered">https://query.yahooapis.com/v1/public/yql?q=</p>
+  <p>Here q is the variable that contains the YQL data of your choice.  An example query is shown below:</p>
+  <p class="centered">"https://query.yahooapis.com/v1/public/yql?q=select Ask from yahoo.finance.quotes "where symbol in ("" + myStock + "")&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback="</p>
+  <p>In the above example the "Ask" parameter is the requested data from the "myStock" variable, which holds the stock symbol.  In our case the stock symbol is AMZN.  Also in the above URL is the format request for the data.  In our case we are requesting JSON data.  XML data can be requested however XML is slightly more difficult to work with and is out of the scope of this tutorial.  The diagnostics portion is not required but does provide some meta data that may be worth exploring.  The meta data is mostly a full return of your query (column names requested), execution time, html versions and methods used.  The remaining portions of the URL are required for the YQL format. Below is a snapshot of what this query returns.</p>
+  <p class="basicCentered"><img src="YQLAskData.jpg" align="middle" alt="Amazon YQL Code"></p>
+  <p>To obtain this data it"s necessary to parse the response with a JSON object on on the object call the query.results object. Below is a snap shot of how to access the "Ask" data petitioned.</p>
+  <p class="basicCentered"><img src="YQLAskCode.jpg" align="middle" alt="Amazon YQL Code"></p>
+  <p>With this method you are able to access as much data as you want by simply using a SQL statement.  To request more data simply increase the scope of the select statement.</p>
+  <p>This method is very valuable however a more pratical option would be to request all the data and filter the results by the JSON object.</p>
+  <h2>Filter by JSON</h2>
+  <p>This method uses the exact same URL listed above but with a slight variation.  Replace the "Ask" parameter or whatever Select parameter you have with the "*" option.  This option retrieves all the data available from the requested stock.  The trick here is in the parsed JSON object returned.  Below is sample code demonstrating how to parse the data.</p>
+  <p class="centeredNoSpace">var obj = JSON.parse(body)</p>
+  <p class="centeredNoSpace">stockName = obj.query.results.quote.symbol</p>
+  <p class="centeredNoSpace">stockPrice = obj.query.results.quote.LastTradePriceOnly</p>
+  <p>The above examples request the stock symbol and the last traded price available.  There is a plethora of data available.  The following file provides an XML snapshot of the data available.  To request the data simply call the object and break down the tree.  The main format will always be object.query.results.quote."yourRequestedParameter".<p>
+  <p class="centered"><a href="XMLFile.txt">XML File</a></p>
+  <p>With these several options available you are not only limited by your creativity.  I"ve taught you all I know.  I now want you to go out and explore the world!  Spread your wings!  Fly my pupil! Fly!</p>
+</div>

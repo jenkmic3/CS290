@@ -1,0 +1,33 @@
+<div class='navigate'>
+  <table>
+    <tr>
+      <td><a href="?page=mainPage">Home</a></td>
+      <td><a href="?page=csvPage">Yahoo Finance CSV API</a></td>
+      <td><a href="?page=yqlPage">Yahoo Finance YQL API</a></td>
+    </tr>
+  </table>
+</div>
+<div class="leftSide">
+  <h1 class='title'>Yahoo Finance CSV API</h1>
+  <p class="author">comma separated file (csv)</p>  
+  <h2>The Query</h2>
+  <p>The query portion is very straight forward.  For a novice like myself this is an easy and exciting task! Here is the basic URL required for the CSV:</p>
+  <p class='centered'>http://finance.yahoo.com/d/quotes.csv</p>
+  <p>Now we need to add some more to this query to get some data. We need to add a query to this URL.  This is done by addding the following to the end of the above URL:</p>
+  <p class='centered'>?s=</p>
+  <p>The 's' if the stock variable.  With the stock variable in place we now need to add a stock symbol.  For this example we're going to use Amazon 'AMZN'.</p>
+  <p class='centered'>http://finance.yahoo.com/d/quotes.csv?s=AMZN</p>
+  <h2>The Data</h2>
+  <p>However this will query alone won't return any data.  Returning data will require further additions to the URL.  We will require the 'f' variable.  'f' is the field variable.  This <a href="http://www.jarloo.com/yahoo_finance/">link</a> provides a whole slew of variables to petition for.  Each of the variable must be placed after the 'f and can be chained together as much as is required.  In our example we will petition for the Symbol 's', the Name 'n', the Asking price 'a', and yesterday's previous closing price 'p'</p>
+  <p class='centered'>http://finance.yahoo.com/d/quotes.csv?s=AMZN&f=snap</p>
+  <p>Below is a snap shot of the data returned.  This was obtained by printing out the body of the returned function.</p>
+  <p class='basicCentered'><img src="AmazonResponse.jpg" align="middle" alt="Amazon Stock"></p>
+  <p>Below is a snap shot of the entire function used for this particular query.</p>
+  <p class='basicCentered'><img src="AmazonCode.jpg" align="middle" alt="Amazon Code"></p>
+  <h2>Historical Data</h2>
+  <p>Another Easter egg that in the Yahoo finance API is being able to retrieve historical data.  The only downside to this option is that you do not get to request the return type of your data.  Below is the URL:</p>
+  <p class='centered'>http://ichart.finance.yahoo.com/table.csv?s=AMZN&a=02&b=02&c=2016&d=03&e=04&f=2016&g=d&ignore=.csv</p>
+  <p>Here we are retrieving the Amazon stock again from the time periods of Feb 2nd 2016 to March 3rd 2016.  The data returned is Open Price, High Price, Close Price, Volume, and Adjusted Close for each of the days requested.  The output will be in csv format as shown below.</>
+  <p class='basicCentered'><img src="HistoricalData.jpg" align="middle" alt="Amazon Code"></p>
+  <p>While these methods certainly have their advantages they either lack in the granularity of the data returned or it's returned in a near unusable format such as the csv. If you are serious about developing with YAHOO finance, then the <a href="?page=yqlPage">Yahoo Finance YQL API</a> is the better tool.</P>
+</div>
